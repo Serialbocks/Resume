@@ -72,6 +72,7 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\urlNewWindow}[1]{\href[pdfnewwindow=true]{https://#1}{\nolinkurl{#1}}}
 
 %-----------------------------
 %%%%%%  CV STARTS HERE  %%%%%%
@@ -80,8 +81,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE John Jones}} & Email: \href{mailto:}{johnj.gw@gmail.com} \\
-  \href{https://www.linkedin.com/in/john-mt-jones/}{www.linkedin.com/in/john-mt-jones} & Mobile:~+1-785-201-1063
+  \textbf{{\LARGE John Jones}} & Email: \href{mailto:johnj.gw@gmail.com}{johnj.gw@gmail.com} \\
+  \urlNewWindow{www.linkedin.com/in/john-mt-jones} & Mobile:~+1-785-201-1063
 \end{tabular*}
 
 %-----------EDUCATION-----------------
@@ -104,16 +105,17 @@
 
 \resumeSubHeadingListEnd
 \vspace{-5pt}
-\section{Experience}
+\section{Employment}
   \resumeSubHeadingListStart
-    \resumeSubheading{Google Summer of Code - Submitty}{Remote}
-    {Student Developer (Full-time)}{May 2019 - Sep 2019}
+    \resumeSubheading{Rack Performance}{Overland Park, KS}
+    {Software Engineer (Full-time)}{Jul 2018 - Apr 2022}
     \resumeItemListStart
-        \resumeItem{Discussion Forum Upgrades}
-          {Refactor forum for performance to handle large databases.}
-          \resumeItem{REST API for Discussion Forum}
-          {Symphony \& Twig based Forum parts converted to API-first interface.}
-          \resumeItem{Ratchet PHP WebSocket}{Implemented a WebSocket for low-latency real time exchange of posts and thread updates.}
+        \resumeItem{Back End Development}
+          {Developed server side API endpoints in C\# .NET using Entity Framework for SQL data management.}
+          \resumeItem{Front End Development}
+          {Developed front-end UX using Angular, Typescript, Angular Material, and Nebular frameworks. 
+            Built real-time web interfaces using Websockets to keep multiple clients in sync.}
+          \resumeItem{Deployment}{Deployed to Azure staging environment for pre-deployment smoke tests and production deployment.}
       \resumeItemListEnd
 \vspace{-5pt}
     \resumeSubheading
