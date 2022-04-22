@@ -1,5 +1,5 @@
 @echo off
-pdflatex ./Resume.tex
-del Resume.aux
-del Resume.out
-Resume.pdf
+pdflatex ./John-Jones-Resume-2022.tex
+del John-Jones-Resume-2022.aux
+del John-Jones-Resume-2022.out
+John-Jones-Resume-2022.pdf
