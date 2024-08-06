@@ -1,3 +1,8 @@
 *.log
 *.synctex.gz
 *.pdf
+*.exe
+*.zip
+*.lzma
+*.cab
+*.bz2

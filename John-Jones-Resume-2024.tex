@@ -1,0 +1,202 @@
+%------------------------
+% John Jones Resume 2022
+% Author : John Jones
+% Adapted from template https://www.overleaf.com/latex/templates/resume-template-by-anubhav/dhmkrwtksdgy
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\urlNewWindow}[1]{\href[pdfnewwindow=true]{https://#1}{\nolinkurl{#1}}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE John Jones}} & Email: \href{mailto:johnj.gw@gmail.com}{johnj.gw@gmail.com} \\
+  \urlNewWindow{www.linkedin.com/in/john-mt-jones} & Mobile:~+1-785-201-1063
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Kansas State University}{Manhattan, KS}
+      {Bachelor of Science - Computer Engineering;  GPA: 3.65}{August 2011 - May 2016}
+      {\scriptsize \textit{ \footnotesize{\newline{}Focus on Embedded Systems, Minor in Computer Science
+	\newline{}\textbf{Courses:} Data Structures, Computer Design and Operations, Microcontrollers, Electronics, Operating Systems}}}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-10pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~C\#, C, C++, Typescript, Javascript, SQL, Python, PHP, Java, VHDL, Verilog, asm}
+	\resumeSubItem{Frameworks}{~~~~.NET, Entity Framework, Angular, Nebular, NodeJS, SignalR, Socket.IO}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~GIT, PostgreSQL, MySQL, Codacy, MongoDB, Postman, Quartus}
+	\resumeSubItem{Platforms}{~~~~~~~Windows, iOS, Linux, Arduino, Raspberry, Microsoft Azure}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------EMPLOYMENT-----------------
+\section{Employment}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Rack Performance}{Overland Park, KS}
+    {Software Engineer}{Jul 2018 - Apr 2022}
+    \resumeItemListStart
+        \resumeItem{Back End Development}
+          {Developed server side API endpoints in C\# .NET using Entity Framework for SQL data management for weight room management and fitness applications.}
+        \resumeItem{Front End Development}
+          {Developed front-end UX using Angular, Typescript, Angular Material, and Nebular frameworks. 
+            Built real-time web interfaces using Websockets to keep multiple clients in sync.}
+        \resumeItem{Testing and Feedback}
+          {Iterate on the application based on QA and customer feedback to eliminate bugs and improve user experience.
+            Promoted product at various high school clinics and interacted directly with customers.}
+        \resumeItem{Deployment}{Deployed to Microsoft Azure Devops staging environment for pre-deployment smoke tests and production deployment.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+		{Garmin International}{Olathe, KS}
+		{Software Engineer}{July 2016 - May 2018}
+		\resumeItemListStart
+        \resumeItem{Embedded Software Development}
+          {Developed mid to low level software in C for handheld and wearable consumer devices
+            including GPSMAP (handheld) 66 \& 276cx, Foretrex 601/701, Fenix 5/5X/5S and others.}
+        \resumeItem{Code Reviews}
+          {Regularly gave and receive peer feedback for every commit before code is merged into the main repository.}
+        \resumeItem{Maintenance}
+          {Fixed bugs, improved, and deployed software updates for released Garmin products.}
+		\resumeItemListEnd
+
+    \resumeSubheading
+		{GE Aviation}{Manhattan, KS}
+		{Co-op Software Engineer}{Jan 2014 - Jan 2016}
+		\resumeItemListStart
+        \resumeItem{Employee Metrics Tool}
+          {Developed a web-based tool used to track and visualize employee metrics.}
+        \resumeItem{Automation Tool}
+          {Developed a web-based tool to automate batching of test procedures for aviation software.}
+        \resumeItem{Verification Engineer}
+          {Worked briefly as a verification engineer writing test procedures for aviation software.}
+		\resumeItemListEnd
+
+    \resumeSubheading
+		{Kansas State University, Knowledge Discovery \& Data Mining}{Manhattan, KS}
+		{Undergraduate Research Assistant Programmer}{2013-2014}
+		\resumeItemListStart
+        \resumeItem{Paystubs Project}
+          {Developed Java program to retrieve and analyze information from paystubs using Optical Character Recognition and basic Natural Language Processing.}
+        \resumeItem{Web Crawler}
+          {Contributed to a web crawler project designed be lighter weight than any other available crawler at the time.
+            I wrote the logic to parse and honor robots.txt files.}
+        \resumeItem{Graphical Visualizations}
+          {Created graphical JavaScript graphs and charts using the d3.js library.}
+		\resumeItemListEnd
+
+    %\resumeSubheading
+		%{Ace Hardware Home Center}{Salina, KS}
+		%{Customer Service, Cashier}{2008-2011}
+		%\resumeItemListStart
+    %    \resumeItem{Customer Service}
+    %      {Resolved customer complaints and handled returns.}
+    %    \resumeItem{Inventory}
+    %      {Maintained electronic inventory levels.}
+    %    \resumeItem{Online Retail}
+    %      {Worked with an online retail partner business, creating and maintaining online retail sales listings, as well as packing and shipping orders.}
+		%\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Supersonic Mario}{Built a mod for Rocket League that allows the player to play as Mario from Super Mario 64 instead of a car.
+  Written in C++ using libsm64 (based on a decompilation of the original Super Mario 64 ROM) and custom DirectX11 code for rendering the Mario 64 model.}
+\vspace{2pt}
+\resumeSubItem{\urlNewWindow{Romhacking.com}}{Built a website to host and aggregate ROM hacks of Super Mario 64. Users can post new hacks, share their progress on 
+hacks they have played or are playing, and discuss ideas and issues in the forums section.}
+\vspace{2pt}
+\resumeSubItem{Piano LED System}{Built a circuit, firmware, web interface using a strip of WS2912B LEDs and a Wi-Fi enabled Mircrocontroller to take MIDI input
+  from a digital piano and light LEDs so each key would light a different one.}
+  \vspace{2pt}
+\resumeSubItem{Codenames Website}{Built a website in NodeJS and Socket.IO to play the popular board game Codenames with friends.}
+\vspace{2pt}
+\resumeSubItem{N64 to Gamecube Controller Adapter}{Built a custom controller adapter using a microctontroller to convert N64 controller inputs to
+  Gamecube. Allowed remapping of controls for games that didn't support it natively. The design used Finite State Machines, and I used an oscilloscope
+  to troubleshoot issues.}
+\vspace{2pt}
+\resumeSubItem{TAS Bot}{Built a bot to play Nintendo 64 Tool Assisted Speedruns (TAS) on the original hardware. This used a Raspberry pi to read the inputs
+  on a file system and feed them into a microcontroller to communicate through the Nintendo's controller port at a 1\(\mu\)s resolution. Implemented Finite State
+  Machines to handle reading and writing the Nintendo 64's serial controller protocol. Used an oscilloscope to to troubleshoot issues.}
+\resumeSubHeadingListEnd
+
+\end{document}
